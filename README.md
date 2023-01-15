@@ -1,4 +1,4 @@
-### Responsive Restaurant website using Html, Css and JavaScript.
+### Responsive Food website using Html, Css and JavaScript.
 
 
 
