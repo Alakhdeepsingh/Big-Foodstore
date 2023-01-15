@@ -1,4 +1,5 @@
 /* fonts  */
+/* for importing font we write this syntax */
 @font-face {
     font-family:"Raleway-regular";
     src:url(../fonts/Raleway-Regular.ttf)
@@ -10,7 +11,7 @@
 @font-face {
     font-family:"Raleway-bold";
     src:url(../fonts/Raleway-Bold.ttf)
-}
+} 
 @font-face {
     font-family:"Raleway-extrabold";
     src:url(../fonts/Raleway-ExtraBold.ttf)
@@ -51,7 +52,8 @@ body{
 }
 .container {
     width:100%;
-    padding:o 15px;
+    padding:7px 15px;
+/* padding: top-bottom:0 left-right:15  */
     margin:0 auto;
 }
 
@@ -149,13 +151,6 @@ body{
 
 
 
-
-
-
-
-
-
-
   header.topbar{
       background:var(--secondary);
       color:var(--pure);
@@ -206,11 +201,12 @@ nav .top .contact img, nav .top .time img{
 }
 nav .navbar a{
     text-decoration:none;
+    /* removes line from text */
     color:var(--secondary);
     font-family:"Raleway-semibold";
     font-size:1rem;
     padding:1rem 1.5rem;
-    transition:all .3s ease;
+    transition:all .3s ease; */
     -webkit-transition:all .3s ease;
     -moz-transition:all .3s ease;
     -ms-transition:all .3s ease;
@@ -225,7 +221,7 @@ nav .navbar a:hover{
     color:var(--pure); 
 }
 .magic-shadow{
-    position: relative;
+    /* position: relative; */
     background:var(--heaven);
 }
 .magic-shadow:after{
@@ -239,7 +235,6 @@ nav .navbar a:hover{
     position: absolute;
     bottom:-22px;
     z-index:-1;
-    
 }
 .magic-shadow-sm{
     position: relative;
@@ -703,11 +698,12 @@ section.contact-us{
 section.contact-us .contact-info-wrapper {
     padding:4rem 0;
     flex:1;
+    /* If an element has flex: 1 , this means the size of all of the other elements will have the same width as their content, but the element with flex: 1 will have the remaining full space given to it. */
 }
 section.contact-us .map{
     flex:1;
     filter:grayscale(100%);
-    -webkit-filter:grayscale(100%);
+    -webkit-filter:brightness(100%);
 }
 section.contact-us .contact-info{
     display:flex;
@@ -731,7 +727,7 @@ section.contact-us .contact-info > div > div > div span:first-child{
 }
 footer{
     background:var(--footer);
-    padding:4rem 0;
+    padding:5rem 0;
 }
 footer .container{
     display:flex;
